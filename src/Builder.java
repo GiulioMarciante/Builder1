@@ -29,6 +29,17 @@ public class Builder {
         return this;
     }
 
+    @Override
+    public String toString() {
+        return "Builder{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                ", address='" + address + '\'' +
+                ", married=" + married +
+                '}';
+    }
+
     public Person build(){
         return new Person(firstName,lastName,age,address,married);
     }
